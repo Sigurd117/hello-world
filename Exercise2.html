@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video and Audio</title>
+    <style>
+        body {
+            font-family: Times New Roman, sans-serif;
+            margin: 0;
+            padding: 50px;
+            background-color: bisque;
+        }
+
+        video,
+        audio {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        video {
+            border: 2px solid #A139F7;
+        }
+
+
+        button {
+            margin: 0 20px;
+            padding: 8px 12px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Webpage with Video and Audio</h1>
+
+<!-- Video Section -->
+<h2>Sonic V.S. Shadow</h2>
+<video controls>
+    <!-- Include multiple source elements fpr different formats -->
+    <source src="video/SonicAdventure2.mp4" width="800" type="video/mp4">
+
+    <!-- Captions and subtitles using the track element -->
+    <track kind="captions" src="captions-en.vtt" srclang="en" label="English">
+    <track kind="subtitles" src="subtitles-es.vtt" srclang="es" label="spanish">
+</video>
+<br>
+<h2>Goku goes Super Saiyan for the first time.</h2>
+<video controls>
+    <source src="video/SuperSaiyan.mp4" width="800" type="video/mp4">
+    <track kind="subtitles" src="subtitles-es.vtt" srclang="es" label="spanish">
+</video>
+
+<!-- Audio Section -->
+<h2>Iris's Death Audio.</h2>
+<audio controls>
+    <!-- Include multiple source elements for different formats -->
+    <source src="audio/Iris.mp3" type="audio/mp3">
+</audio>
+
+</body>
+
+</html>
